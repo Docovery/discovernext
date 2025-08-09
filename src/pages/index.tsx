@@ -4,30 +4,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+// import Heading from '@theme/Heading';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
+// import styles from './index.module.css';
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
@@ -35,7 +14,24 @@ export default function Home(): ReactNode {
     <Layout
       title={`DiscoverNext`}
       description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+      <div className='flex justify-center items-center flex-col py-40'>
+        <h2 className='!text-[60px] !font-medium !font-sans'>Lire et <span className='text-blue-600'>partager</span> les articles</h2>
+        <p className='text-[22px] font-sans text-gray-500'>Partagez vos connaissances et vos idées avec la communauté DiscoverNext !</p>
+        <div className='flex gap-8 mt-8'>
+          <Link
+          to={'/docs/intro'}
+          className="!text-white bg-blue-600 hover:bg-blue-700 hover:!no-underline focus:ring-4 font-medium rounded-lg px-5 py-3 dark:!text-blue-600 dark:hover:!text-white dark:bg-white dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+          >
+            Commencer
+          </Link>
+          <Link
+          to={"#"}
+          className="!text-blue-600 hover:text-blue-700 hover:!no-underline border border-blue-600 dark:border-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg px-5 py-3 focus:outline-none dark:focus:ring-cyan-800 dark:!text-white"
+          >
+          Voir la demo
+          </Link>
+        </div>
+      </div>
       <main>
         <HomepageFeatures />
       </main>

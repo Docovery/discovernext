@@ -11,32 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Facile à utiliser',
+    Svg: require('@site/static/img/feature1.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        DiscoverNext est une application de partage d&apos;article scientifique et d&apos;experts. Partagez vos connaissances et vos idées avec la communauté DiscoverNext !
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Rediger et partager des articles',
+    Svg: require('@site/static/img/feature2.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        DiscoverNext est une application de partage d&apos;article scientifique et d&apos;experts. Partagez vos connaissances et vos idées avec la communauté DiscoverNext !
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Partagez vos connaissances et vos idées',
+    Svg: require('@site/static/img/feature3.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        DiscoverNext est une application de partage d&apos;article scientifique et d&apos;experts. Partagez vos connaissances et vos idées avec la communauté DiscoverNext !
       </>
     ),
   },
@@ -45,7 +42,7 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
+      <div className="text--center flex justify-center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
