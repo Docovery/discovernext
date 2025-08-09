@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdiscovernext=self.webpackChunkdiscovernext||[]).push([[6101],{7346:(e,n,s)=>{s.r(n),s.d(n,{default:()=>t});s(6540);var c=s(4514),r=s(4848);function t(){return(0,r.jsx)(c.A,{children:(0,r.jsx)("div",{children:"Contactez nous !"})})}}}]);
