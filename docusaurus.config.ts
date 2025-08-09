@@ -38,7 +38,7 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: ["./src/plugins/tailwind-config.ts"],
+  //plugins: ["./src/plugins/tailwind-config.ts"],
 
   presets: [
     [
